@@ -1,5 +1,6 @@
 package bcy.like;
 
+import bcy.song.Song;
 import bcy.user.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.Optional;
