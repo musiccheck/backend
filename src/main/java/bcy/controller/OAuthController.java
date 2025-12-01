@@ -14,6 +14,7 @@ public class OAuthController {
     public String privatePage() {
         return "privatePage";
     }
+    //
 }
 
 
