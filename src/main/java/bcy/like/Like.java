@@ -1,5 +1,6 @@
 package bcy.like;
 
+import bcy.song.Song;
 import bcy.user.User;
 import jakarta.persistence.*;
 import lombok.Builder;
@@ -9,7 +10,7 @@ import lombok.NoArgsConstructor;
 @Getter
 @NoArgsConstructor
 @Entity
-@Table(name = "like") // 테이블 이름 지정
+@Table(name = "like")
 public class Like {
 
     @Id
@@ -18,7 +19,7 @@ public class Like {
     private Long id;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "suer_id")
+    @JoinColumn(name = "user_id")
     private User user;
 
     @ManyToOne(fetch = FetchType.LAZY)
@@ -29,13 +30,12 @@ public class Like {
     private boolean isLike; // true: 좋아요, false: 싫어요
 
     @Builder
-    public Like(User user, Long songId, boolean isLike) {
+    public Like(User user, Song song, boolean isLike) {
         this.user = user;
         this.song = song;
         this.isLike = isLike;
     }
 
-    // 상태 변경 메서드 (좋아요 <-> 싫어요 바꿀 때 사용)
     public void updateLikeStatus(boolean isLike) {
         this.isLike = isLike;
     }

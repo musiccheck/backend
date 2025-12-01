@@ -1,6 +1,8 @@
 package bcy.like;
 
+import bcy.song.Song;
 import bcy.user.User;
+import bcy.song.SongRepository;
 import bcy.user.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -12,6 +14,7 @@ public class LikeService {
 
     private final LikeRepository likeRepository;
     private final UserRepository userRepository;
+    private final SongRepository songRepository;
 
     @Transactional
     public String saveReaction(String email, Long songId, boolean isLike) {
