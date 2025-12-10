@@ -42,7 +42,8 @@ public class SecurityConfig {
                 // 4. OAuth2 로그인 설정
                 .oauth2Login(oauth2 -> oauth2
                         .loginPage("/loginForm")
-                        .successHandler(oAuth2SuccessHandler) // 로그인 성공 시 핸들러 연결
+                        .defaultSuccessUrl("/private", true)
+                        //.successHandler(oAuth2SuccessHandler) // 로그인 성공 시 핸들러 연결
                         .userInfoEndpoint(userInfo -> userInfo
                                 .userService(customOAuth2UserService) // 사용자 정보 처리 서비스 연결
                         )
