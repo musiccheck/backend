@@ -20,27 +20,35 @@ import java.util.Collections;
 public class SecurityConfig {
 
     private final CustomOAuth2UserService customOAuth2UserService;
+    private final OAuth2SuccessHandler oAuth2SuccessHandler;
 
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http
+                // 1. CORS 설정 (Lambda DSL 방식)
+                .cors(corsConfigurer -> corsConfigurer.configurationSource(corsConfigurationSource()))
+
+                // 2. CSRF, HTTP Basic, Form Login 비활성화 (Lambda DSL 방식)
                 .csrf(AbstractHttpConfigurer::disable)
                 .httpBasic(AbstractHttpConfigurer::disable)
-                .formLogin(AbstractHttpConfigurer::disable) // 일반 로그인 폼 끄기
+                .formLogin(AbstractHttpConfigurer::disable)
+
+                // 3. 요청 권한 설정
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/private/**").authenticated() // /private 로 시작하는 건 로그인 필수
-                        .anyRequest().permitAll() // 나머지는 다 허용
+                        .requestMatchers("/private/**").authenticated() // /private/** 경로는 인증 필요
+                        .anyRequest().permitAll() // 나머지는 모두 허용
                 )
+
+                // 4. OAuth2 로그인 설정
                 .oauth2Login(oauth2 -> oauth2
                         .loginPage("/loginForm")
-                        .defaultSuccessUrl("/private", true)
+                        .successHandler(oAuth2SuccessHandler) // 로그인 성공 시 핸들러 연결
                         .userInfoEndpoint(userInfo -> userInfo
-                                .userService(customOAuth2UserService)
+                                .userService(customOAuth2UserService) // 사용자 정보 처리 서비스 연결
                         )
                 );
 
         return http.build();
-
     }
 
     @Bean
