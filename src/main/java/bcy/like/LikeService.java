@@ -7,6 +7,8 @@ import bcy.user.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
@@ -47,5 +49,17 @@ public class LikeService {
                 return "상태 변경됨 (" + (isLike ? "좋아요" : "싫어요") + ")";
             }
         }
+    }
+    @Transactional(readOnly = true)
+    public List<LikeResponseDto> getMyDislikes(String email) {
+        User user = userRepository.findByEmail(email)
+                .orElseThrow(() -> new IllegalArgumentException("유저 없음"));
+
+        List<Like> dislikes = likeRepository.findAllByUserAndIsLikeFalse(user);
+
+        return dislikes.stream()
+                .map(like -> new LikeResponseDto(like.getSong()))
+                .collect(Collectors.toList());
+
     }
 }
