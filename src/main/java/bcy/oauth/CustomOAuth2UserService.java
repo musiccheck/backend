@@ -3,9 +3,6 @@ package bcy.oauth;
 import bcy.user.User;
 import bcy.user.UserRepository;
 import bcy.oauth.OAuthAttributes;
-import bcy.oauth.SessionUser;
-import bcy.user.User;
-import jakarta.servlet.http.HttpSession;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -23,7 +20,6 @@ import java.util.Collections;
 @Service
 public class CustomOAuth2UserService implements OAuth2UserService<OAuth2UserRequest, OAuth2User> {
     private final UserRepository userRepository;
-    private final HttpSession httpSession;
 
     @Override
     public OAuth2User loadUser(OAuth2UserRequest userRequest) throws OAuth2AuthenticationException {
@@ -37,8 +33,6 @@ public class CustomOAuth2UserService implements OAuth2UserService<OAuth2UserRequ
 
         User user = saveOrUpdate(attributes);
 
-        httpSession.setAttribute("user", new SessionUser(user));
-
         return new DefaultOAuth2User(Collections.singleton(new SimpleGrantedAuthority(user.getRoleKey())),
                 attributes.getAttributes(),
                 attributes.getNameAttributeKey());
@@ -46,10 +40,16 @@ public class CustomOAuth2UserService implements OAuth2UserService<OAuth2UserRequ
 
     private User saveOrUpdate(OAuthAttributes attributes) {
         User user = userRepository.findByEmail(attributes.getEmail())
-                .map(entity -> entity.update(attributes.getName(), attributes.getPicture()))
+                .map(entity -> {
+                    entity.update(attributes.getName(), attributes.getPicture());
+                    entity.setOAuthAttributes(attributes.getName(), attributes.getPicture(), bcy.user.Role.GUEST);
+                    return entity;
+                })
                 .orElse(attributes.toEntity());
 
-        return userRepository.save(user);
-
+        User savedUser = userRepository.save(user);
+        // 저장 후 OAuth attributes 설정
+        savedUser.setOAuthAttributes(attributes.getName(), attributes.getPicture(), bcy.user.Role.GUEST);
+        return savedUser;
     }
 }

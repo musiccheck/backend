@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Optional;
 
 public interface LikeRepository extends JpaRepository<Like, Long> {
-    Optional<Like> findByUserAndSong(User user, Song song);
+    Optional<Like> findByUserAndMusic(User user, Song music);
     // 좋아요 목록 조회
     List<Like> findAllByUserAndIsLikeTrue(User user);
 

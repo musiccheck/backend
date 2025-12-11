@@ -23,16 +23,16 @@ public class Like {
     private User user;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "song_id")
-    private Song song;
+    @JoinColumn(name = "music_id")
+    private Song music;
 
     @Column(name = "is_like", nullable = false)
     private boolean isLike; // true: 좋아요, false: 싫어요
 
     @Builder
-    public Like(User user, Song song, boolean isLike) {
+    public Like(User user, Song music, boolean isLike) {
         this.user = user;
-        this.song = song;
+        this.music = music;
         this.isLike = isLike;
     }
 
