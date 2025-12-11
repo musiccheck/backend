@@ -11,7 +11,7 @@
 16388||-9223372036854775808|T|G
 16388||10|T|G
 16388||18766|T|G</Grants>
-      <IntrospectionStateNumber>861</IntrospectionStateNumber>
+      <IntrospectionStateNumber>895</IntrospectionStateNumber>
       <ServerVersion>15.4</ServerVersion>
       <StartupTime>1765342449</StartupTime>
       <TimeZones>true ACDT
@@ -1408,7 +1408,7 @@ false posixrules
 13209||10|C|G
 13209||-9223372036854775808|U|G
 13209||10|U|G</Grants>
-      <IntrospectionStateNumber>861</IntrospectionStateNumber>
+      <IntrospectionStateNumber>895</IntrospectionStateNumber>
       <ObjectId>16388</ObjectId>
       <OwnerName>postgres</OwnerName>
     </database>
@@ -5188,8 +5188,8 @@ false posixrules
 16542||18766|w|G
 16542||10|U|G
 16542||18766|U|G</Grants>
-      <IntrospectionStateNumber>861</IntrospectionStateNumber>
-      <LastIntrospectionLocalTimestamp>2025-12-10.10:08:21</LastIntrospectionLocalTimestamp>
+      <IntrospectionStateNumber>895</IntrospectionStateNumber>
+      <LastIntrospectionLocalTimestamp>2025-12-10.10:47:24</LastIntrospectionLocalTimestamp>
       <ObjectId>2200</ObjectId>
       <StateNumber>518</StateNumber>
       <OwnerName>pg_database_owner</OwnerName>
@@ -6019,517 +6019,503 @@ false posixrules
       <StoredType>integer|0s</StoredType>
       <OwnerName>postgres</OwnerName>
     </sequence>
-    <sequence id="345" parent="272" name="users_id_seq">
-      <ObjectId>18776</ObjectId>
-      <SequenceIdentity>1</SequenceIdentity>
-      <StartValue>1</StartValue>
-      <StateNumber>825</StateNumber>
-      <StoredType>bigint|0s</StoredType>
-      <OwnerName>postgres</OwnerName>
-    </sequence>
-    <table id="346" parent="272" name="admin">
+    <table id="345" parent="272" name="admin">
       <ObjectId>16488</ObjectId>
       <StateNumber>822</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <table id="347" parent="272" name="book">
+    <table id="346" parent="272" name="book">
       <ObjectId>16495</ObjectId>
       <StateNumber>822</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <table id="348" parent="272" name="embedding">
+    <table id="347" parent="272" name="embedding">
       <ObjectId>16500</ObjectId>
       <StateNumber>822</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <table id="349" parent="272" name="music">
+    <table id="348" parent="272" name="music">
       <ObjectId>16507</ObjectId>
       <StateNumber>822</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <table id="350" parent="272" name="oauth_user">
+    <table id="349" parent="272" name="oauth_user">
       <ObjectId>16512</ObjectId>
       <StateNumber>822</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <table id="351" parent="272" name="playlist_generation_log">
+    <table id="350" parent="272" name="playlist_generation_log">
       <ObjectId>16519</ObjectId>
       <StateNumber>822</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <table id="352" parent="272" name="song">
+    <table id="351" parent="272" name="song">
       <ObjectId>18768</ObjectId>
       <StateNumber>824</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <table id="353" parent="272" name="user">
+    <table id="352" parent="272" name="user">
       <ObjectId>16526</ObjectId>
       <StateNumber>822</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <table id="354" parent="272" name="user_feedback">
+    <table id="353" parent="272" name="user_feedback">
       <ObjectId>16531</ObjectId>
       <StateNumber>822</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <table id="355" parent="272" name="user_history">
+    <table id="354" parent="272" name="user_history">
       <ObjectId>16537</ObjectId>
       <StateNumber>822</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <table id="356" parent="272" name="users">
-      <ObjectId>18777</ObjectId>
-      <StateNumber>825</StateNumber>
-      <AccessMethodId>2</AccessMethodId>
-      <OwnerName>postgres</OwnerName>
-    </table>
-    <argument id="357" parent="273">
+    <argument id="355" parent="273">
       <ArgumentDirection>R</ArgumentDirection>
       <StoredType>vector|0s</StoredType>
     </argument>
-    <argument id="358" parent="273">
+    <argument id="356" parent="273">
       <Position>1</Position>
       <StoredType>vector|0s</StoredType>
     </argument>
-    <argument id="359" parent="274">
+    <argument id="357" parent="274">
       <ArgumentDirection>R</ArgumentDirection>
       <StoredType>vector|0s</StoredType>
     </argument>
-    <argument id="360" parent="274">
+    <argument id="358" parent="274">
       <Position>1</Position>
       <StoredType>vector|0s</StoredType>
     </argument>
-    <argument id="361" parent="302">
+    <argument id="359" parent="302">
       <ArgumentDirection>R</ArgumentDirection>
       <StoredType>vector|0s</StoredType>
     </argument>
-    <argument id="362" parent="302">
+    <argument id="360" parent="302">
       <Position>1</Position>
       <StoredType>double precision[]|0s</StoredType>
     </argument>
-    <argument id="363" parent="302">
+    <argument id="361" parent="302">
       <Position>2</Position>
       <StoredType>integer|0s</StoredType>
     </argument>
-    <argument id="364" parent="302">
+    <argument id="362" parent="302">
       <Position>3</Position>
       <StoredType>boolean|0s</StoredType>
     </argument>
-    <argument id="365" parent="303">
+    <argument id="363" parent="303">
       <ArgumentDirection>R</ArgumentDirection>
       <StoredType>vector|0s</StoredType>
     </argument>
-    <argument id="366" parent="303">
+    <argument id="364" parent="303">
       <Position>1</Position>
       <StoredType>integer[]|0s</StoredType>
     </argument>
-    <argument id="367" parent="303">
+    <argument id="365" parent="303">
       <Position>2</Position>
       <StoredType>integer|0s</StoredType>
     </argument>
-    <argument id="368" parent="303">
+    <argument id="366" parent="303">
       <Position>3</Position>
       <StoredType>boolean|0s</StoredType>
     </argument>
-    <argument id="369" parent="304">
+    <argument id="367" parent="304">
       <ArgumentDirection>R</ArgumentDirection>
       <StoredType>vector|0s</StoredType>
     </argument>
-    <argument id="370" parent="304">
+    <argument id="368" parent="304">
       <Position>1</Position>
       <StoredType>numeric[]|0s</StoredType>
     </argument>
-    <argument id="371" parent="304">
+    <argument id="369" parent="304">
       <Position>2</Position>
       <StoredType>integer|0s</StoredType>
     </argument>
-    <argument id="372" parent="304">
+    <argument id="370" parent="304">
       <Position>3</Position>
       <StoredType>boolean|0s</StoredType>
     </argument>
-    <argument id="373" parent="305">
+    <argument id="371" parent="305">
       <ArgumentDirection>R</ArgumentDirection>
       <StoredType>vector|0s</StoredType>
     </argument>
-    <argument id="374" parent="305">
+    <argument id="372" parent="305">
       <Position>1</Position>
       <StoredType>real[]|0s</StoredType>
     </argument>
-    <argument id="375" parent="305">
+    <argument id="373" parent="305">
       <Position>2</Position>
       <StoredType>integer|0s</StoredType>
     </argument>
-    <argument id="376" parent="305">
+    <argument id="374" parent="305">
       <Position>3</Position>
       <StoredType>boolean|0s</StoredType>
     </argument>
-    <argument id="377" parent="306">
+    <argument id="375" parent="306">
       <ArgumentDirection>R</ArgumentDirection>
       <StoredType>double precision|0s</StoredType>
     </argument>
-    <argument id="378" parent="306">
+    <argument id="376" parent="306">
       <Position>1</Position>
       <StoredType>vector|0s</StoredType>
     </argument>
-    <argument id="379" parent="306">
+    <argument id="377" parent="306">
       <Position>2</Position>
       <StoredType>vector|0s</StoredType>
     </argument>
-    <argument id="380" parent="307">
+    <argument id="378" parent="307">
       <ArgumentDirection>R</ArgumentDirection>
       <StoredType>index_am_handler|0s</StoredType>
     </argument>
-    <argument id="381" parent="307">
+    <argument id="379" parent="307">
       <Position>1</Position>
       <StoredType>internal|0s</StoredType>
+    </argument>
+    <argument id="380" parent="308">
+      <ArgumentDirection>R</ArgumentDirection>
+      <StoredType>double precision|0s</StoredType>
+    </argument>
+    <argument id="381" parent="308">
+      <Position>1</Position>
+      <StoredType>vector|0s</StoredType>
     </argument>
     <argument id="382" parent="308">
-      <ArgumentDirection>R</ArgumentDirection>
-      <StoredType>double precision|0s</StoredType>
-    </argument>
-    <argument id="383" parent="308">
-      <Position>1</Position>
-      <StoredType>vector|0s</StoredType>
-    </argument>
-    <argument id="384" parent="308">
       <Position>2</Position>
       <StoredType>vector|0s</StoredType>
     </argument>
-    <argument id="385" parent="309">
+    <argument id="383" parent="309">
       <ArgumentDirection>R</ArgumentDirection>
       <StoredType>index_am_handler|0s</StoredType>
     </argument>
-    <argument id="386" parent="309">
+    <argument id="384" parent="309">
       <Position>1</Position>
       <StoredType>internal|0s</StoredType>
     </argument>
-    <argument id="387" parent="310">
+    <argument id="385" parent="310">
       <ArgumentDirection>R</ArgumentDirection>
       <StoredType>double precision|0s</StoredType>
     </argument>
-    <argument id="388" parent="310">
+    <argument id="386" parent="310">
       <Position>1</Position>
       <StoredType>vector|0s</StoredType>
     </argument>
-    <argument id="389" parent="310">
+    <argument id="387" parent="310">
       <Position>2</Position>
+      <StoredType>vector|0s</StoredType>
+    </argument>
+    <argument id="388" parent="311">
+      <ArgumentDirection>R</ArgumentDirection>
+      <StoredType>double precision|0s</StoredType>
+    </argument>
+    <argument id="389" parent="311">
+      <Position>1</Position>
       <StoredType>vector|0s</StoredType>
     </argument>
     <argument id="390" parent="311">
-      <ArgumentDirection>R</ArgumentDirection>
-      <StoredType>double precision|0s</StoredType>
-    </argument>
-    <argument id="391" parent="311">
-      <Position>1</Position>
+      <Position>2</Position>
       <StoredType>vector|0s</StoredType>
     </argument>
-    <argument id="392" parent="311">
-      <Position>2</Position>
+    <argument id="391" parent="312">
+      <ArgumentDirection>R</ArgumentDirection>
+      <StoredType>vector|0s</StoredType>
+    </argument>
+    <argument id="392" parent="312">
+      <Position>1</Position>
       <StoredType>vector|0s</StoredType>
     </argument>
     <argument id="393" parent="312">
-      <ArgumentDirection>R</ArgumentDirection>
-      <StoredType>vector|0s</StoredType>
-    </argument>
-    <argument id="394" parent="312">
-      <Position>1</Position>
-      <StoredType>vector|0s</StoredType>
-    </argument>
-    <argument id="395" parent="312">
       <Position>2</Position>
       <StoredType>integer|0s</StoredType>
     </argument>
-    <argument id="396" parent="312">
+    <argument id="394" parent="312">
       <Position>3</Position>
       <StoredType>boolean|0s</StoredType>
     </argument>
-    <argument id="397" parent="313">
+    <argument id="395" parent="313">
       <ArgumentDirection>R</ArgumentDirection>
       <StoredType>double precision[]|0s</StoredType>
     </argument>
-    <argument id="398" parent="313">
+    <argument id="396" parent="313">
       <Position>1</Position>
       <StoredType>double precision[]|0s</StoredType>
     </argument>
-    <argument id="399" parent="313">
+    <argument id="397" parent="313">
       <Position>2</Position>
+      <StoredType>vector|0s</StoredType>
+    </argument>
+    <argument id="398" parent="314">
+      <ArgumentDirection>R</ArgumentDirection>
+      <StoredType>vector|0s</StoredType>
+    </argument>
+    <argument id="399" parent="314">
+      <Position>1</Position>
       <StoredType>vector|0s</StoredType>
     </argument>
     <argument id="400" parent="314">
-      <ArgumentDirection>R</ArgumentDirection>
-      <StoredType>vector|0s</StoredType>
-    </argument>
-    <argument id="401" parent="314">
-      <Position>1</Position>
-      <StoredType>vector|0s</StoredType>
-    </argument>
-    <argument id="402" parent="314">
       <Position>2</Position>
       <StoredType>vector|0s</StoredType>
     </argument>
-    <argument id="403" parent="315">
+    <argument id="401" parent="315">
       <ArgumentDirection>R</ArgumentDirection>
       <StoredType>vector|0s</StoredType>
     </argument>
-    <argument id="404" parent="315">
+    <argument id="402" parent="315">
       <Position>1</Position>
       <StoredType>double precision[]|0s</StoredType>
+    </argument>
+    <argument id="403" parent="316">
+      <ArgumentDirection>R</ArgumentDirection>
+      <StoredType>integer|0s</StoredType>
+    </argument>
+    <argument id="404" parent="316">
+      <Position>1</Position>
+      <StoredType>vector|0s</StoredType>
     </argument>
     <argument id="405" parent="316">
-      <ArgumentDirection>R</ArgumentDirection>
-      <StoredType>integer|0s</StoredType>
-    </argument>
-    <argument id="406" parent="316">
-      <Position>1</Position>
-      <StoredType>vector|0s</StoredType>
-    </argument>
-    <argument id="407" parent="316">
       <Position>2</Position>
       <StoredType>vector|0s</StoredType>
+    </argument>
+    <argument id="406" parent="317">
+      <ArgumentDirection>R</ArgumentDirection>
+      <StoredType>double precision[]|0s</StoredType>
+    </argument>
+    <argument id="407" parent="317">
+      <Position>1</Position>
+      <StoredType>double precision[]|0s</StoredType>
     </argument>
     <argument id="408" parent="317">
-      <ArgumentDirection>R</ArgumentDirection>
-      <StoredType>double precision[]|0s</StoredType>
-    </argument>
-    <argument id="409" parent="317">
-      <Position>1</Position>
-      <StoredType>double precision[]|0s</StoredType>
-    </argument>
-    <argument id="410" parent="317">
       <Position>2</Position>
       <StoredType>double precision[]|0s</StoredType>
     </argument>
-    <argument id="411" parent="318">
+    <argument id="409" parent="318">
       <ArgumentDirection>R</ArgumentDirection>
       <StoredType>integer|0s</StoredType>
     </argument>
-    <argument id="412" parent="318">
+    <argument id="410" parent="318">
+      <Position>1</Position>
+      <StoredType>vector|0s</StoredType>
+    </argument>
+    <argument id="411" parent="319">
+      <ArgumentDirection>R</ArgumentDirection>
+      <StoredType>boolean|0s</StoredType>
+    </argument>
+    <argument id="412" parent="319">
       <Position>1</Position>
       <StoredType>vector|0s</StoredType>
     </argument>
     <argument id="413" parent="319">
+      <Position>2</Position>
+      <StoredType>vector|0s</StoredType>
+    </argument>
+    <argument id="414" parent="320">
       <ArgumentDirection>R</ArgumentDirection>
       <StoredType>boolean|0s</StoredType>
     </argument>
-    <argument id="414" parent="319">
+    <argument id="415" parent="320">
       <Position>1</Position>
-      <StoredType>vector|0s</StoredType>
-    </argument>
-    <argument id="415" parent="319">
-      <Position>2</Position>
       <StoredType>vector|0s</StoredType>
     </argument>
     <argument id="416" parent="320">
+      <Position>2</Position>
+      <StoredType>vector|0s</StoredType>
+    </argument>
+    <argument id="417" parent="321">
       <ArgumentDirection>R</ArgumentDirection>
       <StoredType>boolean|0s</StoredType>
     </argument>
-    <argument id="417" parent="320">
+    <argument id="418" parent="321">
       <Position>1</Position>
-      <StoredType>vector|0s</StoredType>
-    </argument>
-    <argument id="418" parent="320">
-      <Position>2</Position>
       <StoredType>vector|0s</StoredType>
     </argument>
     <argument id="419" parent="321">
-      <ArgumentDirection>R</ArgumentDirection>
-      <StoredType>boolean|0s</StoredType>
-    </argument>
-    <argument id="420" parent="321">
-      <Position>1</Position>
-      <StoredType>vector|0s</StoredType>
-    </argument>
-    <argument id="421" parent="321">
       <Position>2</Position>
       <StoredType>vector|0s</StoredType>
     </argument>
-    <argument id="422" parent="322">
+    <argument id="420" parent="322">
       <ArgumentDirection>R</ArgumentDirection>
       <StoredType>vector|0s</StoredType>
     </argument>
-    <argument id="423" parent="322">
+    <argument id="421" parent="322">
       <Position>1</Position>
       <StoredType>cstring|0s</StoredType>
     </argument>
-    <argument id="424" parent="322">
+    <argument id="422" parent="322">
       <Position>2</Position>
       <StoredType>oid|0s</StoredType>
     </argument>
-    <argument id="425" parent="322">
+    <argument id="423" parent="322">
       <Position>3</Position>
       <StoredType>integer|0s</StoredType>
     </argument>
-    <argument id="426" parent="323">
+    <argument id="424" parent="323">
       <ArgumentDirection>R</ArgumentDirection>
       <StoredType>double precision|0s</StoredType>
     </argument>
-    <argument id="427" parent="323">
+    <argument id="425" parent="323">
       <Position>1</Position>
       <StoredType>vector|0s</StoredType>
     </argument>
-    <argument id="428" parent="323">
+    <argument id="426" parent="323">
       <Position>2</Position>
+      <StoredType>vector|0s</StoredType>
+    </argument>
+    <argument id="427" parent="324">
+      <ArgumentDirection>R</ArgumentDirection>
+      <StoredType>boolean|0s</StoredType>
+    </argument>
+    <argument id="428" parent="324">
+      <Position>1</Position>
       <StoredType>vector|0s</StoredType>
     </argument>
     <argument id="429" parent="324">
+      <Position>2</Position>
+      <StoredType>vector|0s</StoredType>
+    </argument>
+    <argument id="430" parent="325">
       <ArgumentDirection>R</ArgumentDirection>
       <StoredType>boolean|0s</StoredType>
     </argument>
-    <argument id="430" parent="324">
+    <argument id="431" parent="325">
       <Position>1</Position>
-      <StoredType>vector|0s</StoredType>
-    </argument>
-    <argument id="431" parent="324">
-      <Position>2</Position>
       <StoredType>vector|0s</StoredType>
     </argument>
     <argument id="432" parent="325">
-      <ArgumentDirection>R</ArgumentDirection>
-      <StoredType>boolean|0s</StoredType>
-    </argument>
-    <argument id="433" parent="325">
-      <Position>1</Position>
+      <Position>2</Position>
       <StoredType>vector|0s</StoredType>
     </argument>
-    <argument id="434" parent="325">
-      <Position>2</Position>
+    <argument id="433" parent="326">
+      <ArgumentDirection>R</ArgumentDirection>
+      <StoredType>vector|0s</StoredType>
+    </argument>
+    <argument id="434" parent="326">
+      <Position>1</Position>
       <StoredType>vector|0s</StoredType>
     </argument>
     <argument id="435" parent="326">
-      <ArgumentDirection>R</ArgumentDirection>
-      <StoredType>vector|0s</StoredType>
-    </argument>
-    <argument id="436" parent="326">
-      <Position>1</Position>
-      <StoredType>vector|0s</StoredType>
-    </argument>
-    <argument id="437" parent="326">
       <Position>2</Position>
       <StoredType>vector|0s</StoredType>
     </argument>
-    <argument id="438" parent="327">
+    <argument id="436" parent="327">
       <ArgumentDirection>R</ArgumentDirection>
       <StoredType>boolean|0s</StoredType>
     </argument>
-    <argument id="439" parent="327">
+    <argument id="437" parent="327">
       <Position>1</Position>
       <StoredType>vector|0s</StoredType>
     </argument>
-    <argument id="440" parent="327">
+    <argument id="438" parent="327">
       <Position>2</Position>
+      <StoredType>vector|0s</StoredType>
+    </argument>
+    <argument id="439" parent="328">
+      <ArgumentDirection>R</ArgumentDirection>
+      <StoredType>double precision|0s</StoredType>
+    </argument>
+    <argument id="440" parent="328">
+      <Position>1</Position>
       <StoredType>vector|0s</StoredType>
     </argument>
     <argument id="441" parent="328">
-      <ArgumentDirection>R</ArgumentDirection>
-      <StoredType>double precision|0s</StoredType>
-    </argument>
-    <argument id="442" parent="328">
-      <Position>1</Position>
-      <StoredType>vector|0s</StoredType>
-    </argument>
-    <argument id="443" parent="328">
       <Position>2</Position>
       <StoredType>vector|0s</StoredType>
     </argument>
-    <argument id="444" parent="329">
+    <argument id="442" parent="329">
       <ArgumentDirection>R</ArgumentDirection>
       <StoredType>double precision|0s</StoredType>
     </argument>
-    <argument id="445" parent="329">
+    <argument id="443" parent="329">
       <Position>1</Position>
       <StoredType>vector|0s</StoredType>
     </argument>
-    <argument id="446" parent="330">
+    <argument id="444" parent="330">
       <ArgumentDirection>R</ArgumentDirection>
       <StoredType>cstring|0s</StoredType>
     </argument>
-    <argument id="447" parent="330">
+    <argument id="445" parent="330">
       <Position>1</Position>
       <StoredType>vector|0s</StoredType>
     </argument>
-    <argument id="448" parent="331">
+    <argument id="446" parent="331">
       <ArgumentDirection>R</ArgumentDirection>
       <StoredType>vector|0s</StoredType>
     </argument>
-    <argument id="449" parent="331">
+    <argument id="447" parent="331">
       <Position>1</Position>
       <StoredType>internal|0s</StoredType>
     </argument>
-    <argument id="450" parent="331">
+    <argument id="448" parent="331">
       <Position>2</Position>
       <StoredType>oid|0s</StoredType>
     </argument>
-    <argument id="451" parent="331">
+    <argument id="449" parent="331">
       <Position>3</Position>
       <StoredType>integer|0s</StoredType>
     </argument>
-    <argument id="452" parent="332">
+    <argument id="450" parent="332">
       <ArgumentDirection>R</ArgumentDirection>
       <StoredType>bytea|0s</StoredType>
     </argument>
-    <argument id="453" parent="332">
+    <argument id="451" parent="332">
+      <Position>1</Position>
+      <StoredType>vector|0s</StoredType>
+    </argument>
+    <argument id="452" parent="333">
+      <ArgumentDirection>R</ArgumentDirection>
+      <StoredType>double precision|0s</StoredType>
+    </argument>
+    <argument id="453" parent="333">
       <Position>1</Position>
       <StoredType>vector|0s</StoredType>
     </argument>
     <argument id="454" parent="333">
-      <ArgumentDirection>R</ArgumentDirection>
-      <StoredType>double precision|0s</StoredType>
-    </argument>
-    <argument id="455" parent="333">
-      <Position>1</Position>
+      <Position>2</Position>
       <StoredType>vector|0s</StoredType>
     </argument>
-    <argument id="456" parent="333">
-      <Position>2</Position>
+    <argument id="455" parent="334">
+      <ArgumentDirection>R</ArgumentDirection>
+      <StoredType>vector|0s</StoredType>
+    </argument>
+    <argument id="456" parent="334">
+      <Position>1</Position>
       <StoredType>vector|0s</StoredType>
     </argument>
     <argument id="457" parent="334">
-      <ArgumentDirection>R</ArgumentDirection>
-      <StoredType>vector|0s</StoredType>
-    </argument>
-    <argument id="458" parent="334">
-      <Position>1</Position>
-      <StoredType>vector|0s</StoredType>
-    </argument>
-    <argument id="459" parent="334">
       <Position>2</Position>
       <StoredType>vector|0s</StoredType>
     </argument>
-    <argument id="460" parent="335">
+    <argument id="458" parent="335">
       <ArgumentDirection>R</ArgumentDirection>
       <StoredType>real[]|0s</StoredType>
     </argument>
-    <argument id="461" parent="335">
+    <argument id="459" parent="335">
       <Position>1</Position>
       <StoredType>vector|0s</StoredType>
     </argument>
-    <argument id="462" parent="335">
+    <argument id="460" parent="335">
       <Position>2</Position>
       <StoredType>integer|0s</StoredType>
     </argument>
-    <argument id="463" parent="335">
+    <argument id="461" parent="335">
       <Position>3</Position>
       <StoredType>boolean|0s</StoredType>
     </argument>
-    <argument id="464" parent="336">
+    <argument id="462" parent="336">
       <ArgumentDirection>R</ArgumentDirection>
       <StoredType>integer|0s</StoredType>
     </argument>
-    <argument id="465" parent="336">
+    <argument id="463" parent="336">
       <Position>1</Position>
       <StoredType>cstring[]|0s</StoredType>
     </argument>
-    <column id="466" parent="346" name="admin_id">
+    <column id="464" parent="345" name="admin_id">
       <DefaultExpression>nextval(&apos;admin_admin_id_seq&apos;::regclass)</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -6538,28 +6524,28 @@ false posixrules
       <SequenceId>16494</SequenceId>
       <TypeId>23</TypeId>
     </column>
-    <column id="467" parent="346" name="email">
+    <column id="465" parent="345" name="email">
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>739</StateNumber>
       <StoredType>varchar(255)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="468" parent="346" name="password">
+    <column id="466" parent="345" name="password">
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StateNumber>739</StateNumber>
       <StoredType>varchar(255)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="469" parent="346" name="role">
+    <column id="467" parent="345" name="role">
       <DefaultExpression>&apos;ADMIN&apos;::character varying</DefaultExpression>
       <Position>4</Position>
       <StateNumber>739</StateNumber>
       <StoredType>varchar(50)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <index id="470" parent="346" name="admin_pkey">
+    <index id="468" parent="345" name="admin_pkey">
       <ColNames>admin_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>18684</ObjectId>
@@ -6568,7 +6554,7 @@ false posixrules
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <index id="471" parent="346" name="admin_email_key">
+    <index id="469" parent="345" name="admin_email_key">
       <ColNames>email</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>18682</ObjectId>
@@ -6579,76 +6565,76 @@ false posixrules
       <CollationIds>100</CollationIds>
       <CollationParentNames>pg_catalog</CollationParentNames>
     </index>
-    <key id="472" parent="346" name="admin_pkey">
+    <key id="470" parent="345" name="admin_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>18685</ObjectId>
       <Primary>1</Primary>
       <StateNumber>796</StateNumber>
       <UnderlyingIndexId>18684</UnderlyingIndexId>
     </key>
-    <key id="473" parent="346" name="admin_email_key">
+    <key id="471" parent="345" name="admin_email_key">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>18683</ObjectId>
       <StateNumber>795</StateNumber>
       <UnderlyingIndexId>18682</UnderlyingIndexId>
     </key>
-    <column id="474" parent="347" name="isbn">
+    <column id="472" parent="346" name="isbn">
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StateNumber>744</StateNumber>
       <StoredType>varchar(30)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="475" parent="347" name="title">
+    <column id="473" parent="346" name="title">
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>744</StateNumber>
       <StoredType>varchar(255)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="476" parent="347" name="author">
+    <column id="474" parent="346" name="author">
       <Position>3</Position>
       <StateNumber>744</StateNumber>
       <StoredType>varchar(255)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="477" parent="347" name="publisher">
+    <column id="475" parent="346" name="publisher">
       <Position>4</Position>
       <StateNumber>744</StateNumber>
       <StoredType>varchar(255)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="478" parent="347" name="pubdate">
+    <column id="476" parent="346" name="pubdate">
       <Position>5</Position>
       <StateNumber>744</StateNumber>
       <StoredType>varchar(20)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="479" parent="347" name="description">
+    <column id="477" parent="346" name="description">
       <Position>6</Position>
       <StateNumber>744</StateNumber>
       <StoredType>text|0s</StoredType>
       <TypeId>25</TypeId>
     </column>
-    <column id="480" parent="347" name="image">
+    <column id="478" parent="346" name="image">
       <Position>7</Position>
       <StateNumber>744</StateNumber>
       <StoredType>varchar(500)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="481" parent="347" name="search_keyword">
+    <column id="479" parent="346" name="search_keyword">
       <Position>8</Position>
       <StateNumber>744</StateNumber>
       <StoredType>varchar(255)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="482" parent="347" name="embedding_id">
+    <column id="480" parent="346" name="embedding_id">
       <Position>9</Position>
       <StateNumber>744</StateNumber>
       <StoredType>integer|0s</StoredType>
       <TypeId>23</TypeId>
     </column>
-    <foreign-key id="483" parent="347" name="book_embedding_id_fkey">
+    <foreign-key id="481" parent="346" name="book_embedding_id_fkey">
       <ColNames>embedding_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>18704</ObjectId>
@@ -6656,7 +6642,7 @@ false posixrules
       <RefKeyColPositions>1</RefKeyColPositions>
       <RefTableId>16500</RefTableId>
     </foreign-key>
-    <index id="484" parent="347" name="book_pkey">
+    <index id="482" parent="346" name="book_pkey">
       <ColNames>isbn</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>18686</ObjectId>
@@ -6668,14 +6654,14 @@ false posixrules
       <CollationIds>100</CollationIds>
       <CollationParentNames>pg_catalog</CollationParentNames>
     </index>
-    <key id="485" parent="347" name="book_pkey">
+    <key id="483" parent="346" name="book_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>18687</ObjectId>
       <Primary>1</Primary>
       <StateNumber>797</StateNumber>
       <UnderlyingIndexId>18686</UnderlyingIndexId>
     </key>
-    <column id="486" parent="348" name="embedding_id">
+    <column id="484" parent="347" name="embedding_id">
       <DefaultExpression>nextval(&apos;embedding_embedding_id_seq&apos;::regclass)</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -6684,28 +6670,28 @@ false posixrules
       <SequenceId>16506</SequenceId>
       <TypeId>23</TypeId>
     </column>
-    <column id="487" parent="348" name="vector">
+    <column id="485" parent="347" name="vector">
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>746</StateNumber>
       <StoredType>vector(768)|0s</StoredType>
       <TypeId>16390</TypeId>
     </column>
-    <column id="488" parent="348" name="type">
+    <column id="486" parent="347" name="type">
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StateNumber>746</StateNumber>
       <StoredType>varchar(20)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="489" parent="348" name="created_at">
+    <column id="487" parent="347" name="created_at">
       <DefaultExpression>now()</DefaultExpression>
       <Position>4</Position>
       <StateNumber>746</StateNumber>
       <StoredType>timestamp|0s</StoredType>
       <TypeId>1114</TypeId>
     </column>
-    <index id="490" parent="348" name="embedding_pkey">
+    <index id="488" parent="347" name="embedding_pkey">
       <ColNames>embedding_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>18688</ObjectId>
@@ -6714,69 +6700,69 @@ false posixrules
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="491" parent="348" name="embedding_pkey">
+    <key id="489" parent="347" name="embedding_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>18689</ObjectId>
       <Primary>1</Primary>
       <StateNumber>798</StateNumber>
       <UnderlyingIndexId>18688</UnderlyingIndexId>
     </key>
-    <column id="492" parent="349" name="track_id">
+    <column id="490" parent="348" name="track_id">
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StateNumber>751</StateNumber>
       <StoredType>varchar(50)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="493" parent="349" name="track_name">
+    <column id="491" parent="348" name="track_name">
       <Position>2</Position>
       <StateNumber>751</StateNumber>
       <StoredType>varchar(255)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="494" parent="349" name="artist_name">
+    <column id="492" parent="348" name="artist_name">
       <Position>3</Position>
       <StateNumber>751</StateNumber>
       <StoredType>varchar(255)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="495" parent="349" name="album_name">
+    <column id="493" parent="348" name="album_name">
       <Position>4</Position>
       <StateNumber>751</StateNumber>
       <StoredType>varchar(255)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="496" parent="349" name="image_url">
+    <column id="494" parent="348" name="image_url">
       <Position>5</Position>
       <StateNumber>751</StateNumber>
       <StoredType>varchar(500)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="497" parent="349" name="external_url">
+    <column id="495" parent="348" name="external_url">
       <Position>6</Position>
       <StateNumber>751</StateNumber>
       <StoredType>varchar(500)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="498" parent="349" name="embedding_id">
+    <column id="496" parent="348" name="embedding_id">
       <Position>7</Position>
       <StateNumber>751</StateNumber>
       <StoredType>integer|0s</StoredType>
       <TypeId>23</TypeId>
     </column>
-    <column id="499" parent="349" name="popularity">
+    <column id="497" parent="348" name="popularity">
       <Position>8</Position>
       <StateNumber>751</StateNumber>
       <StoredType>integer|0s</StoredType>
       <TypeId>23</TypeId>
     </column>
-    <column id="500" parent="349" name="search_keyword">
+    <column id="498" parent="348" name="search_keyword">
       <Position>9</Position>
       <StateNumber>751</StateNumber>
       <StoredType>varchar(255)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <foreign-key id="501" parent="349" name="music_embedding_id_fkey">
+    <foreign-key id="499" parent="348" name="music_embedding_id_fkey">
       <ColNames>embedding_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>18709</ObjectId>
@@ -6784,7 +6770,7 @@ false posixrules
       <RefKeyColPositions>1</RefKeyColPositions>
       <RefTableId>16500</RefTableId>
     </foreign-key>
-    <index id="502" parent="349" name="music_pkey">
+    <index id="500" parent="348" name="music_pkey">
       <ColNames>track_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>18690</ObjectId>
@@ -6796,14 +6782,14 @@ false posixrules
       <CollationIds>100</CollationIds>
       <CollationParentNames>pg_catalog</CollationParentNames>
     </index>
-    <key id="503" parent="349" name="music_pkey">
+    <key id="501" parent="348" name="music_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>18691</ObjectId>
       <Primary>1</Primary>
       <StateNumber>799</StateNumber>
       <UnderlyingIndexId>18690</UnderlyingIndexId>
     </key>
-    <column id="504" parent="350" name="oauth_id">
+    <column id="502" parent="349" name="oauth_id">
       <DefaultExpression>nextval(&apos;oauth_user_oauth_id_seq&apos;::regclass)</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -6812,41 +6798,41 @@ false posixrules
       <SequenceId>16518</SequenceId>
       <TypeId>23</TypeId>
     </column>
-    <column id="505" parent="350" name="user_id">
+    <column id="503" parent="349" name="user_id">
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>753</StateNumber>
       <StoredType>integer|0s</StoredType>
       <TypeId>23</TypeId>
     </column>
-    <column id="506" parent="350" name="provider">
+    <column id="504" parent="349" name="provider">
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StateNumber>753</StateNumber>
       <StoredType>varchar(50)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="507" parent="350" name="provider_user_id">
+    <column id="505" parent="349" name="provider_user_id">
       <NotNull>1</NotNull>
       <Position>4</Position>
       <StateNumber>753</StateNumber>
       <StoredType>varchar(255)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="508" parent="350" name="email">
+    <column id="506" parent="349" name="email">
       <Position>5</Position>
       <StateNumber>753</StateNumber>
       <StoredType>varchar(255)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="509" parent="350" name="created_at">
+    <column id="507" parent="349" name="created_at">
       <DefaultExpression>now()</DefaultExpression>
       <Position>6</Position>
       <StateNumber>753</StateNumber>
       <StoredType>timestamp|0s</StoredType>
       <TypeId>1114</TypeId>
     </column>
-    <foreign-key id="510" parent="350" name="oauth_user_user_id_fkey">
+    <foreign-key id="508" parent="349" name="oauth_user_user_id_fkey">
       <ColNames>user_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>18714</ObjectId>
@@ -6854,7 +6840,7 @@ false posixrules
       <RefKeyColPositions>1</RefKeyColPositions>
       <RefTableId>16526</RefTableId>
     </foreign-key>
-    <index id="511" parent="350" name="oauth_user_pkey">
+    <index id="509" parent="349" name="oauth_user_pkey">
       <ColNames>oauth_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>18692</ObjectId>
@@ -6863,14 +6849,14 @@ false posixrules
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="512" parent="350" name="oauth_user_pkey">
+    <key id="510" parent="349" name="oauth_user_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>18693</ObjectId>
       <Primary>1</Primary>
       <StateNumber>800</StateNumber>
       <UnderlyingIndexId>18692</UnderlyingIndexId>
     </key>
-    <column id="513" parent="351" name="log_id">
+    <column id="511" parent="350" name="log_id">
       <DefaultExpression>nextval(&apos;playlist_generation_log_log_id_seq&apos;::regclass)</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -6879,38 +6865,38 @@ false posixrules
       <SequenceId>16525</SequenceId>
       <TypeId>23</TypeId>
     </column>
-    <column id="514" parent="351" name="user_id">
+    <column id="512" parent="350" name="user_id">
       <Position>2</Position>
       <StateNumber>758</StateNumber>
       <StoredType>integer|0s</StoredType>
       <TypeId>23</TypeId>
     </column>
-    <column id="515" parent="351" name="book_id">
+    <column id="513" parent="350" name="book_id">
       <Position>3</Position>
       <StateNumber>758</StateNumber>
       <StoredType>varchar(30)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="516" parent="351" name="music_list">
+    <column id="514" parent="350" name="music_list">
       <Position>4</Position>
       <StateNumber>758</StateNumber>
       <StoredType>text|0s</StoredType>
       <TypeId>25</TypeId>
     </column>
-    <column id="517" parent="351" name="algorithm">
+    <column id="515" parent="350" name="algorithm">
       <Position>5</Position>
       <StateNumber>758</StateNumber>
       <StoredType>varchar(50)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="518" parent="351" name="created_at">
+    <column id="516" parent="350" name="created_at">
       <DefaultExpression>now()</DefaultExpression>
       <Position>6</Position>
       <StateNumber>758</StateNumber>
       <StoredType>timestamp|0s</StoredType>
       <TypeId>1114</TypeId>
     </column>
-    <foreign-key id="519" parent="351" name="playlist_generation_log_user_id_fkey">
+    <foreign-key id="517" parent="350" name="playlist_generation_log_user_id_fkey">
       <ColNames>user_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>18724</ObjectId>
@@ -6918,7 +6904,7 @@ false posixrules
       <RefKeyColPositions>1</RefKeyColPositions>
       <RefTableId>16526</RefTableId>
     </foreign-key>
-    <foreign-key id="520" parent="351" name="playlist_generation_log_book_id_fkey">
+    <foreign-key id="518" parent="350" name="playlist_generation_log_book_id_fkey">
       <ColNames>book_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>18719</ObjectId>
@@ -6926,7 +6912,7 @@ false posixrules
       <RefKeyColPositions>1</RefKeyColPositions>
       <RefTableId>16495</RefTableId>
     </foreign-key>
-    <index id="521" parent="351" name="playlist_generation_log_pkey">
+    <index id="519" parent="350" name="playlist_generation_log_pkey">
       <ColNames>log_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>18694</ObjectId>
@@ -6935,14 +6921,14 @@ false posixrules
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="522" parent="351" name="playlist_generation_log_pkey">
+    <key id="520" parent="350" name="playlist_generation_log_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>18695</ObjectId>
       <Primary>1</Primary>
       <StateNumber>801</StateNumber>
       <UnderlyingIndexId>18694</UnderlyingIndexId>
     </key>
-    <column id="523" parent="352" name="song_id">
+    <column id="521" parent="351" name="song_id">
       <DefaultExpression>nextval(&apos;song_song_id_seq&apos;::regclass)</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -6951,39 +6937,39 @@ false posixrules
       <SequenceId>18767</SequenceId>
       <TypeId>20</TypeId>
     </column>
-    <column id="524" parent="352" name="album">
+    <column id="522" parent="351" name="album">
       <Position>2</Position>
       <StateNumber>824</StateNumber>
       <StoredType>varchar(255)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="525" parent="352" name="artist">
+    <column id="523" parent="351" name="artist">
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StateNumber>824</StateNumber>
       <StoredType>varchar(255)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="526" parent="352" name="image_url">
+    <column id="524" parent="351" name="image_url">
       <Position>4</Position>
       <StateNumber>824</StateNumber>
       <StoredType>varchar(255)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="527" parent="352" name="lyrics">
+    <column id="525" parent="351" name="lyrics">
       <Position>5</Position>
       <StateNumber>824</StateNumber>
       <StoredType>varchar(2000)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="528" parent="352" name="title">
+    <column id="526" parent="351" name="title">
       <NotNull>1</NotNull>
       <Position>6</Position>
       <StateNumber>824</StateNumber>
       <StoredType>varchar(255)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <index id="529" parent="352" name="song_pkey">
+    <index id="527" parent="351" name="song_pkey">
       <ColNames>song_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>18774</ObjectId>
@@ -6992,14 +6978,14 @@ false posixrules
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="530" parent="352" name="song_pkey">
+    <key id="528" parent="351" name="song_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>18775</ObjectId>
       <Primary>1</Primary>
       <StateNumber>824</StateNumber>
       <UnderlyingIndexId>18774</UnderlyingIndexId>
     </key>
-    <column id="531" parent="353" name="user_id">
+    <column id="529" parent="352" name="user_id">
       <DefaultExpression>nextval(&apos;user_user_id_seq&apos;::regclass)</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -7008,28 +6994,28 @@ false posixrules
       <SequenceId>16542</SequenceId>
       <TypeId>23</TypeId>
     </column>
-    <column id="532" parent="353" name="email">
+    <column id="530" parent="352" name="email">
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>763</StateNumber>
       <StoredType>varchar(255)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="533" parent="353" name="created_at">
+    <column id="531" parent="352" name="created_at">
       <DefaultExpression>now()</DefaultExpression>
       <Position>3</Position>
       <StateNumber>763</StateNumber>
       <StoredType>timestamp|0s</StoredType>
       <TypeId>1114</TypeId>
     </column>
-    <column id="534" parent="353" name="updated_at">
+    <column id="532" parent="352" name="updated_at">
       <DefaultExpression>now()</DefaultExpression>
       <Position>4</Position>
       <StateNumber>763</StateNumber>
       <StoredType>timestamp|0s</StoredType>
       <TypeId>1114</TypeId>
     </column>
-    <index id="535" parent="353" name="user_pkey">
+    <index id="533" parent="352" name="user_pkey">
       <ColNames>user_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>18702</ObjectId>
@@ -7038,7 +7024,7 @@ false posixrules
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <index id="536" parent="353" name="user_email_key">
+    <index id="534" parent="352" name="user_email_key">
       <ColNames>email</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>18696</ObjectId>
@@ -7049,20 +7035,20 @@ false posixrules
       <CollationIds>100</CollationIds>
       <CollationParentNames>pg_catalog</CollationParentNames>
     </index>
-    <key id="537" parent="353" name="user_pkey">
+    <key id="535" parent="352" name="user_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>18703</ObjectId>
       <Primary>1</Primary>
       <StateNumber>805</StateNumber>
       <UnderlyingIndexId>18702</UnderlyingIndexId>
     </key>
-    <key id="538" parent="353" name="user_email_key">
+    <key id="536" parent="352" name="user_email_key">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>18697</ObjectId>
       <StateNumber>802</StateNumber>
       <UnderlyingIndexId>18696</UnderlyingIndexId>
     </key>
-    <column id="539" parent="354" name="feedback_id">
+    <column id="537" parent="353" name="feedback_id">
       <DefaultExpression>nextval(&apos;user_feedback_feedback_id_seq&apos;::regclass)</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -7071,45 +7057,45 @@ false posixrules
       <SequenceId>16536</SequenceId>
       <TypeId>23</TypeId>
     </column>
-    <column id="540" parent="354" name="user_id">
+    <column id="538" parent="353" name="user_id">
       <Position>2</Position>
       <StateNumber>765</StateNumber>
       <StoredType>integer|0s</StoredType>
       <TypeId>23</TypeId>
     </column>
-    <column id="541" parent="354" name="book_id">
+    <column id="539" parent="353" name="book_id">
       <Position>3</Position>
       <StateNumber>765</StateNumber>
       <StoredType>varchar(30)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="542" parent="354" name="music_id">
+    <column id="540" parent="353" name="music_id">
       <Position>4</Position>
       <StateNumber>765</StateNumber>
       <StoredType>varchar(50)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="543" parent="354" name="feedback">
+    <column id="541" parent="353" name="feedback">
       <Position>5</Position>
       <StateNumber>765</StateNumber>
       <StoredType>varchar(10)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="544" parent="354" name="created_at">
+    <column id="542" parent="353" name="created_at">
       <DefaultExpression>now()</DefaultExpression>
       <Position>6</Position>
       <StateNumber>765</StateNumber>
       <StoredType>timestamp|0s</StoredType>
       <TypeId>1114</TypeId>
     </column>
-    <column id="545" parent="354" name="updated_at">
+    <column id="543" parent="353" name="updated_at">
       <DefaultExpression>now()</DefaultExpression>
       <Position>7</Position>
       <StateNumber>765</StateNumber>
       <StoredType>timestamp|0s</StoredType>
       <TypeId>1114</TypeId>
     </column>
-    <foreign-key id="546" parent="354" name="user_feedback_user_id_fkey">
+    <foreign-key id="544" parent="353" name="user_feedback_user_id_fkey">
       <ColNames>user_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>18739</ObjectId>
@@ -7117,7 +7103,7 @@ false posixrules
       <RefKeyColPositions>1</RefKeyColPositions>
       <RefTableId>16526</RefTableId>
     </foreign-key>
-    <foreign-key id="547" parent="354" name="user_feedback_book_id_fkey">
+    <foreign-key id="545" parent="353" name="user_feedback_book_id_fkey">
       <ColNames>book_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>18729</ObjectId>
@@ -7125,7 +7111,7 @@ false posixrules
       <RefKeyColPositions>1</RefKeyColPositions>
       <RefTableId>16495</RefTableId>
     </foreign-key>
-    <foreign-key id="548" parent="354" name="user_feedback_music_id_fkey">
+    <foreign-key id="546" parent="353" name="user_feedback_music_id_fkey">
       <ColNames>music_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>18734</ObjectId>
@@ -7133,7 +7119,7 @@ false posixrules
       <RefKeyColPositions>1</RefKeyColPositions>
       <RefTableId>16507</RefTableId>
     </foreign-key>
-    <index id="549" parent="354" name="user_feedback_pkey">
+    <index id="547" parent="353" name="user_feedback_pkey">
       <ColNames>feedback_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>18698</ObjectId>
@@ -7142,14 +7128,14 @@ false posixrules
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="550" parent="354" name="user_feedback_pkey">
+    <key id="548" parent="353" name="user_feedback_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>18699</ObjectId>
       <Primary>1</Primary>
       <StateNumber>803</StateNumber>
       <UnderlyingIndexId>18698</UnderlyingIndexId>
     </key>
-    <column id="551" parent="355" name="history_id">
+    <column id="549" parent="354" name="history_id">
       <DefaultExpression>nextval(&apos;user_history_history_id_seq&apos;::regclass)</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -7158,32 +7144,32 @@ false posixrules
       <SequenceId>16541</SequenceId>
       <TypeId>23</TypeId>
     </column>
-    <column id="552" parent="355" name="user_id">
+    <column id="550" parent="354" name="user_id">
       <Position>2</Position>
       <StateNumber>770</StateNumber>
       <StoredType>integer|0s</StoredType>
       <TypeId>23</TypeId>
     </column>
-    <column id="553" parent="355" name="book_id">
+    <column id="551" parent="354" name="book_id">
       <Position>3</Position>
       <StateNumber>770</StateNumber>
       <StoredType>varchar(30)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="554" parent="355" name="search_query">
+    <column id="552" parent="354" name="search_query">
       <Position>4</Position>
       <StateNumber>770</StateNumber>
       <StoredType>varchar(255)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="555" parent="355" name="created_at">
+    <column id="553" parent="354" name="created_at">
       <DefaultExpression>now()</DefaultExpression>
       <Position>5</Position>
       <StateNumber>770</StateNumber>
       <StoredType>timestamp|0s</StoredType>
       <TypeId>1114</TypeId>
     </column>
-    <foreign-key id="556" parent="355" name="user_history_user_id_fkey">
+    <foreign-key id="554" parent="354" name="user_history_user_id_fkey">
       <ColNames>user_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>18749</ObjectId>
@@ -7191,7 +7177,7 @@ false posixrules
       <RefKeyColPositions>1</RefKeyColPositions>
       <RefTableId>16526</RefTableId>
     </foreign-key>
-    <foreign-key id="557" parent="355" name="user_history_book_id_fkey">
+    <foreign-key id="555" parent="354" name="user_history_book_id_fkey">
       <ColNames>book_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>18744</ObjectId>
@@ -7199,7 +7185,7 @@ false posixrules
       <RefKeyColPositions>1</RefKeyColPositions>
       <RefTableId>16495</RefTableId>
     </foreign-key>
-    <index id="558" parent="355" name="user_history_pkey">
+    <index id="556" parent="354" name="user_history_pkey">
       <ColNames>history_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>18700</ObjectId>
@@ -7208,70 +7194,12 @@ false posixrules
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="559" parent="355" name="user_history_pkey">
+    <key id="557" parent="354" name="user_history_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>18701</ObjectId>
       <Primary>1</Primary>
       <StateNumber>804</StateNumber>
       <UnderlyingIndexId>18700</UnderlyingIndexId>
-    </key>
-    <check id="560" parent="356" name="users_role_check">
-      <ColNames>role</ColNames>
-      <ObjectId>18781</ObjectId>
-      <Predicate>(role)::text = ANY ((ARRAY[&apos;GUEST&apos;::character varying, &apos;USER&apos;::character varying])::text[])</Predicate>
-      <StateNumber>825</StateNumber>
-    </check>
-    <column id="561" parent="356" name="id">
-      <DefaultExpression>nextval(&apos;users_id_seq&apos;::regclass)</DefaultExpression>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-      <StateNumber>825</StateNumber>
-      <StoredType>bigint|0s</StoredType>
-      <SequenceId>18776</SequenceId>
-      <TypeId>20</TypeId>
-    </column>
-    <column id="562" parent="356" name="email">
-      <NotNull>1</NotNull>
-      <Position>2</Position>
-      <StateNumber>825</StateNumber>
-      <StoredType>varchar(255)|0s</StoredType>
-      <TypeId>1043</TypeId>
-    </column>
-    <column id="563" parent="356" name="name">
-      <NotNull>1</NotNull>
-      <Position>3</Position>
-      <StateNumber>825</StateNumber>
-      <StoredType>varchar(255)|0s</StoredType>
-      <TypeId>1043</TypeId>
-    </column>
-    <column id="564" parent="356" name="picture">
-      <Position>4</Position>
-      <StateNumber>825</StateNumber>
-      <StoredType>varchar(255)|0s</StoredType>
-      <TypeId>1043</TypeId>
-    </column>
-    <column id="565" parent="356" name="role">
-      <NotNull>1</NotNull>
-      <Position>5</Position>
-      <StateNumber>825</StateNumber>
-      <StoredType>varchar(255)|0s</StoredType>
-      <TypeId>1043</TypeId>
-    </column>
-    <index id="566" parent="356" name="users_pkey">
-      <ColNames>id</ColNames>
-      <NameSurrogate>1</NameSurrogate>
-      <ObjectId>18784</ObjectId>
-      <Primary>1</Primary>
-      <StateNumber>825</StateNumber>
-      <Unique>1</Unique>
-      <AccessMethodId>403</AccessMethodId>
-    </index>
-    <key id="567" parent="356" name="users_pkey">
-      <NameSurrogate>1</NameSurrogate>
-      <ObjectId>18785</ObjectId>
-      <Primary>1</Primary>
-      <StateNumber>825</StateNumber>
-      <UnderlyingIndexId>18784</UnderlyingIndexId>
     </key>
   </database-model>
 </dataSource>

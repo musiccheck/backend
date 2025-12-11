@@ -15,7 +15,7 @@ public class UserController {
     private final UserRepository userRepository;
 
     // 내 정보 조회 API
-    @GetMapping("/api/users/me")
+    @GetMapping("/api/user/me")
     public UserDto getMyProfile(@AuthenticationPrincipal OAuth2User principal) {
         if (principal == null) {
             throw new IllegalArgumentException("로그인이 필요합니다.");

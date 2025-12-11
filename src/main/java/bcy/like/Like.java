@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @Getter
 @NoArgsConstructor
 @Entity
-@Table(name = "like")
+@Table(name = "\"like\"")
 public class Like {
 
     @Id
@@ -26,7 +26,7 @@ public class Like {
     @JoinColumn(name = "song_id")
     private Song song;
 
-    @Column(nullable = false)
+    @Column(name = "is_like", nullable = false)
     private boolean isLike; // true: 좋아요, false: 싫어요
 
     @Builder
