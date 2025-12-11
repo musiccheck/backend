@@ -25,6 +25,6 @@ public class LikeController {
         // JWT 토큰에서 이메일 가져오기
         String email = authentication.getName();
 
-        return likeService.saveReaction(email, likeDto.getSongId(), likeDto.isLike());
+        return likeService.saveReaction(email, likeDto.getMusicId(), likeDto.isLike());
     }
 }

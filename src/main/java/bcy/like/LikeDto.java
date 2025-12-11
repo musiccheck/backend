@@ -6,6 +6,6 @@ import lombok.NoArgsConstructor;
 @Getter
 @NoArgsConstructor
 public class LikeDto {
-    private Long songId;
+    private Long musicId;
     private boolean isLike;
 }
