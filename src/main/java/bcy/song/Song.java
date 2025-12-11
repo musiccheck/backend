@@ -16,16 +16,18 @@ public class Song {
     @Column(name = "song_id")
     private Long id;
 
-    @Column(nullable = false)
+    @Column(name = "title", nullable = false)
     private String title;
 
-    @Column(nullable = false)
+    @Column(name = "artist", nullable = false)
     private String artist;
 
+    @Column(name = "album")
     private String album;
 
-    @Column(length = 2000)
+    @Column(name = "lyrics", length = 2000)
     private String lyrics;
 
+    @Column(name = "image_url")
     private String imageUrl;
 }

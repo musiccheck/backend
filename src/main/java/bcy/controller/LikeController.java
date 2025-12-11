@@ -3,8 +3,7 @@ package bcy.controller;
 import bcy.like.LikeDto;
 import bcy.like.LikeService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.security.core.annotation.AuthenticationPrincipal;
-import org.springframework.security.oauth2.core.user.OAuth2User;
+import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -15,15 +14,16 @@ public class LikeController {
 
     private final LikeService likeService;
 
-    // API 주소: POST http://localhost:8080/api/likes
+    // API 주소: POST http://172.20.10.3:8080/api/likes
     @PostMapping("/api/likes")
-    public String toggleLike(@RequestBody LikeDto likeDto, @AuthenticationPrincipal OAuth2User principal) {
+    public String toggleLike(@RequestBody LikeDto likeDto, Authentication authentication) {
 
-        if (principal == null) {
+        if (authentication == null || !authentication.isAuthenticated()) {
             return "로그인이 필요합니다.";
         }
 
-        String email = (String) principal.getAttributes().get("email");
+        // JWT 토큰에서 이메일 가져오기
+        String email = authentication.getName();
 
         return likeService.saveReaction(email, likeDto.getSongId(), likeDto.isLike());
     }
