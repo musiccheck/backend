@@ -3,29 +3,39 @@ package bcy.song;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import org.springframework.data.jpa.repository.JpaRepository;
 
 @Getter
 @NoArgsConstructor
 @Entity
-@Table(name = "song")
+@Table(name = "music")
 public class Song {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "song_id")
+    @Column(name = "track_id")
     private Long id;
 
-    @Column(nullable = false)
-    private String title;
+    @Column(name = "track_name", nullable = false)
+    private String trackName;
 
-    @Column(nullable = false)
-    private String artist;
+    @Column(name = "artist_name", nullable = false)
+    private String artistName;
 
-    private String album;
+    @Column(name = "album_name")
+    private String albumName;
 
-    @Column(length = 2000)
-    private String lyrics;
-
+    @Column(name = "image_url")
     private String imageUrl;
+
+    @Column(name = "external_url")
+    private String externalUrl;
+
+    @Column(name = "embedding_id")
+    private Long embeddingId;
+
+    @Column(name = "popularity")
+    private Integer popularity;
+
+    @Column(name = "search_keyword")
+    private String searchKeyword;
 }

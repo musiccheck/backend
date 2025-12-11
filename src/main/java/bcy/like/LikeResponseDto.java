@@ -7,13 +7,13 @@ import lombok.NoArgsConstructor;
 @Getter
 @NoArgsConstructor
 public class LikeResponseDto {
-    private Long songId;
-    private String title;
-    private String artist;
+    private Long musicId;
+    private String trackName;
+    private String artistName;
 
-    public LikeResponseDto(Song song) {
-        this.songId = song.getId();
-        this.title = song.getTitle();
-        this.artist = song.getArtist();
+    public LikeResponseDto(Song music) {
+        this.musicId = music.getId();
+        this.trackName = music.getTrackName();
+        this.artistName = music.getArtistName();
     }
 }

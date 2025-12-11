@@ -19,20 +19,20 @@ public class LikeService {
     private final SongRepository songRepository;
 
     @Transactional
-    public String saveReaction(String email, Long songId, boolean isLike) {
+    public String saveReaction(String email, Long musicId, boolean isLike) {
         User user = userRepository.findByEmail(email)
                 .orElseThrow(() -> new IllegalArgumentException("해당 유저가 없습니다."));
 
-        Song song = songRepository.findById(songId)
+        Song music = songRepository.findById(musicId)
                 .orElseThrow(() -> new IllegalArgumentException("해당 노래가 없습니다."));
 
-        Like existingLike = likeRepository.findByUserAndSong(user, song)
+        Like existingLike = likeRepository.findByUserAndMusic(user, music)
                 .orElse(null);
 
         if (existingLike == null) {
             Like newLike = Like.builder()
                     .user(user)
-                    .song(song)
+                    .music(music)
                     .isLike(isLike)
                     .build();
             likeRepository.save(newLike);
@@ -58,7 +58,7 @@ public class LikeService {
         List<Like> dislikes = likeRepository.findAllByUserAndIsLikeFalse(user);
 
         return dislikes.stream()
-                .map(like -> new LikeResponseDto(like.getSong()))
+                .map(like -> new LikeResponseDto(like.getMusic()))
                 .collect(Collectors.toList());
 
     }

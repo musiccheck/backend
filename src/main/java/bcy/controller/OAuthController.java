@@ -15,6 +15,11 @@ public class OAuthController {
         return "privatePage";
     }
 
+    // OAuth 로그인 시작 엔드포인트 (앱에서 사용)
+    @GetMapping("/oauth2/authorization/kakao")
+    public String kakaoLogin() {
+        return "redirect:/oauth2/authorization/kakao";
+    }
 }
 
 
